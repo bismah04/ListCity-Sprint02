@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         String[] cities = {"Edmonton", "Vancouver", "Moscow", "Sydney", "Berlin", "Vienna", "Tokyo", "Beijing", "Osaka", "New Delhi"};
         dataList = new ArrayList<>(Arrays.asList(cities));
-        cityAdapter = new ArrayAdapter<>(this, R.layout.content, dataList);
+        cityAdapter = new ArrayAdapter<>(this, R.layout.content, R.id.content_view, dataList);
         cityList.setAdapter(cityAdapter);
 
         // Add City
